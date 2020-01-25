@@ -1,8 +1,7 @@
 def set_fun(fun):
     def call_fun(*args, **kargs):
         print("------call_fun------")
-        a = fun(*args, **kargs)
-        print("-----返回值：",a)
+        return  fun(*args, **kargs)
     return call_fun
 
 @set_fun
